@@ -10,12 +10,33 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+.h-100 {
+    height: 100vh;
+}
 
+.banner {
+    background-image: url('../img/banner.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height: 100%;
+}
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 48px;
-    background: -webkit-linear-gradient(#F15B27, #F69E22);
+    background: -webkit-linear-gradient(#000000, #0a58ca);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: absolute;
+        top: 50%;
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .banner {
+            background-image: url(img/banner.jpg);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-position: center;
+        }
 }

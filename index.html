@@ -4,51 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>reliantfzco </title>
+    <title>Coming Soon</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .coming-soon-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url('img/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.3rem;
+            color: #0a58ca;
+            font-weight: bold;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            background: -webkit-linear-gradient(#000000, #0a58ca);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+            top: 50%;
+        }
+    </style>
 </head>
 
-<style>
-    .banner {
-        background-image: url('img/banner.jpg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        object-fit: contain;
-    }
-</style>
 <body>
 
-
-    <section style="height: 100vh;" class="banner">
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar navbar-light ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                          <p style="font-size: 3.2rem; font-weight: 900;">
-                            Reliantfzco
-                          </p>
-
-                        </a>
-                    </div>
-                </nav>
-            </div>
+    <div class="coming-soon-section">
+        <div class="logo">
+            Reliantfzco
         </div>
-        <div class="container">
-            <div class="row">
-                <h1 class="text-center">Website <br> Under Maintenance</h1>
-            </div>
-            <!-- <div class="row">
-                <img src="img/under-construction-animate.svg" class="img-fluid" alt="" srcset="">
-            </div> -->
-        </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+        <h1 class="text-center">COMING SOON</h1>
+    </div>
+
 </body>
 
 </html>
